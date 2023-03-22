@@ -159,8 +159,12 @@ svg:hover {
 
 @media (min-width: 533px) {
     .navigator-head a:hover {
+        height: 50px;
+        width: 100px;
+        text-align: center;
         background-color: var(--negro);
         color: var(--primario)
+       
     }
 }
 
@@ -170,9 +174,6 @@ svg:hover {
     font-size: 2rem;
     font-weight: 250;
     padding: 0.5rem;
-    height: 50px;
-    width: 100px;
-    text-align: center;
 }
 
 .navigator-head a:hover {
