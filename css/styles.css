@@ -1,0 +1,310 @@
+:root {
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+
+    --primario: #3cff00;
+    --gris: #c0c0c0;
+    --blanco: #ffffff;
+    --negro: #313030;
+    --transparente: #00000077;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 1 rem = 10px */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--negro);
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+/** GLOBALS **/
+
+.container {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--fuenteHeading);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-size: 2.8rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/** UTILITIES **/
+
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/** HEADER **/
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 533px) {
+    .bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.logo {
+    color: var(--gris);
+}
+
+.logo__name {
+    font-weight: 400;
+    text-align: center;
+}
+
+.logo__bold {
+    font-weight: 700;
+    color: var(--primario);
+}
+
+@media (max-width: 532px) {
+    .social {
+        display: none !important;
+        display: flex;
+        gap: 0.5rem;
+    }
+}
+
+.social {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--gris);
+}
+
+.social svg {
+    cursor: pointer;
+}
+
+svg:hover {
+    stroke: var(--primario);
+}
+
+/** NAVIGATOR **/
+
+.nav-bg {
+    background-color: var(--gris);
+}
+
+
+.navigator-head {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 533px) {
+    .navigator-head {
+        flex-direction: row;
+        justify-content: space-evenly;
+
+    }
+}
+
+@media (min-width: 533px) {
+    .navigator-head a:hover {
+        background-color: var(--negro);
+        color: var(--primario)
+    }
+}
+
+.navigator-head a {
+    color: var(--negro);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 250;
+    padding: 0.5rem;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+}
+
+.navigator-head a:hover {
+    background-color: var(--negro);
+    color: var(--primario)
+}
+
+/** SLIDE **/
+
+.slideshow {
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.slides {
+    display: none;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -40px;
+    padding: 16px;
+    color: var(--gris);
+    background-color: var(--transparente);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: transparent;
+    color: var(--primario);
+}
+
+.dots {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.dot {
+    align-items: center;
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: var(--gris);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: var(--primario);
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/** FOOTER **/
+
+@media (min-width: 533px) {
+    .team {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+    }
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.member h3 {
+    color: var(--gris);
+    font-weight: normal;
+}
+
+.member p {
+    line-height: 2;
+    text-align: center;
+    color: var(--blanco);
+}
+
+.member .circle {
+    height: 15rem;
+    width: 15rem;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 3px solid var(--primario);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.social-foot {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--gris);
+}
+
+.social-foot svg {
+    cursor: pointer;
+}
