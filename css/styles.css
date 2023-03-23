@@ -159,8 +159,6 @@ svg:hover {
 
 @media (min-width: 533px) {
     .navigator-head a:hover {
-        height: 50px;
-        width: 100px;
         text-align: center;
         background-color: var(--negro);
         color: var(--primario)
@@ -182,6 +180,13 @@ svg:hover {
 .navigator-head a:hover {
     background-color: var(--negro);
     color: var(--primario)
+}
+
+@media (max-width: 532px) {
+    .navigator-head a {
+        width: auto;
+        text-align: center;
+    }
 }
 
 /** SLIDE **/
