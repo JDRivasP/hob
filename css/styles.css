@@ -70,6 +70,11 @@ img {
     height: auto;
 }
 
+video {
+    width: 100%;
+    height: auto;
+}
+
 /** UTILITIES **/
 
 .no-margin {
