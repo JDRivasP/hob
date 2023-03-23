@@ -180,7 +180,7 @@ svg:hover {
     font-weight: 250;
     padding: 0.5rem;
     height: 50px;
-    width: 100px;
+    width: 25%;
 }
 
 .navigator-head a:hover {
@@ -279,7 +279,9 @@ svg:hover {
 
 /** MAIN **/
 
-
+.main {
+    background-color: var(--gris);
+}
 
 /** FOOTER **/
 
@@ -308,7 +310,7 @@ svg:hover {
     color: var(--blanco);
 }
 
-.member .circle {
+.circle {
     height: 15rem;
     width: 15rem;
     background-color: transparent;
