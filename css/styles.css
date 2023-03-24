@@ -204,7 +204,7 @@ svg:hover {
 }
 
 .slides {
-    height: 850px;
+    height: 900px;
     display: none;
 
 }
@@ -285,7 +285,11 @@ svg:hover {
 
 /** NEWS **/
 
-
+.content {
+    width: 100%;
+    height: 750px;
+    position: absolute;
+}
 
 /** FOOTER **/
 
