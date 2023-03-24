@@ -306,6 +306,14 @@ svg:hover {
     transition: all 300ms;
 }
 
+.box > span {
+    background-color: var(--transparente);
+    width: 100%;
+    height: 50%;
+    
+    
+}
+
 .box:hover{
     flex: 25%
 }
