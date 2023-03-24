@@ -286,9 +286,10 @@ svg:hover {
 /** NEWS **/
 
 .content {
+    cursor: pointer;
     display: flex;
     flex-direction: row;
-    width: 33.33%;
+    width: 25%;
     height: 300px;
 }
 
