@@ -294,6 +294,7 @@ svg:hover {
 }
 
 .box {
+    position: relative;
     flex: 1;
     overflow: hidden;
     transition: all 550ms;
@@ -323,6 +324,26 @@ svg:hover {
     height: 100%;
 }
 
+.btn {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    color: var(--gris);
+    font-size: 16px;
+    padding: 12px 24px;
+    border: solid var(--negro);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--primario);
+}
+
 .modal {
     display: none;/* Hidden by default */
     position: fixed;/* Stay in place */
@@ -339,10 +360,10 @@ svg:hover {
 
 /* Modal Content */
 .modal-content {
-    background-color: #fefefe;
+    background-color: var(--transparente);
     margin: auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid var(--negro);
     width: 80%;
 }
 
@@ -359,6 +380,10 @@ svg:hover {
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
+
+.p {
+    color: var(--blanco);
 }
 
 
