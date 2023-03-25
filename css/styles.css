@@ -337,6 +337,7 @@ svg:hover {
     border: solid var(--negro);
     cursor: pointer;
     border-radius: 5px;
+    text-align: center;
 }
 
 .btn:hover {
