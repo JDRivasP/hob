@@ -31,6 +31,7 @@ function showSlides(n) {
 
 /** END SLICE **/
 
+
 /** MODAL INICIO **/
 
 /**  NEWS - 1  **/
@@ -140,3 +141,5 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 }
+
+/** END MODAL **/
