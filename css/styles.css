@@ -369,7 +369,7 @@ svg:hover {
 
 /* The Close Button */
 .close {
-    color: #aaaaaa;
+    color: var(--gris);
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -377,7 +377,7 @@ svg:hover {
 
 .close:hover,
 .close:focus {
-    color: #000;
+    color: var(--primario);
     text-decoration: none;
     cursor: pointer;
 }
