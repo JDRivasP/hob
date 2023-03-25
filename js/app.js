@@ -36,7 +36,7 @@ function showSlides(n) {
 
 /**  NEWS - 1  **/
 
-var modal = document.getElementById("modal");
+var modal = document.getElementById("modal1");
 
 // Get the button that opens the modal
 var btn = document.getElementById("btn1");
@@ -63,7 +63,7 @@ window.onclick = function(event) {
 
 /**  NEWS - 2  **/
 
-var modal = document.getElementById("modal");
+var modal = document.getElementById("modal2");
 
 // Get the button that opens the modal
 var btn = document.getElementById("btn2");
@@ -90,7 +90,7 @@ window.onclick = function (event) {
 
 /**  NEWS - 3  **/
 
-var modal = document.getElementById("modal");
+var modal = document.getElementById("modal3");
 
 // Get the button that opens the modal
 var btn = document.getElementById("btn3");
@@ -117,7 +117,7 @@ window.onclick = function (event) {
 
 /**  NEWS - 4  **/
 
-var modal = document.getElementById("modal");
+var modal = document.getElementById("modal4");
 
 // Get the button that opens the modal
 var btn = document.getElementById("btn4");
